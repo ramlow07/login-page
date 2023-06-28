@@ -14,3 +14,22 @@ background-position: center;
 background-size: cover;
 }
 
+.container-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white !important;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.container-box h1 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 60px;
+    color: blue !important;
+    position: relative;
+}
