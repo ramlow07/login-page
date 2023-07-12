@@ -15,9 +15,9 @@ background-size: cover;
 }
 
 .container-box {
-    width: 90%;
+    width: 50%;
     max-width: 450px;
-    position: absolute;
+    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -27,9 +27,9 @@ background-size: cover;
 }
 
 .container-box h1 {
-    font-size: 50px;
+    font-size: 65px;
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     color: blue !important;
     position: relative;
 }
@@ -42,7 +42,7 @@ background-size: cover;
     width: 30px;
     height: 4px;
     border-radius: 3px;
-    background-image: linear-gradient(rgba(12, 12, 255, 0), rgba(0, 0, 255, 0.2));
+    background-image: linear-gradient(rgb(12, 12, 255), rgba(12, 12, 255));
     background-size: cover;
     transform: translate(-50%);
 } 
@@ -53,5 +53,21 @@ body{
 }
 
 body .container-box {
-background-color: rgba(255, 255, 255, 0.239)  !important;
+background-color: rgba(255, 255, 255, 0.546)  !important;
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    align-items: center;
+    display: flex;
+}
+
+input {
+width: 100%;
+background: transparent;
+border: 0;
+outline: 0;
+padding: 18px 15px;
 }
