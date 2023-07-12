@@ -75,5 +75,27 @@ padding: 18px 15px;
 .input-field i{
     margin-left: 15px;
     color: #999;
+}
 
+form p a {
+    text-decoration: none;
+    color: blue !important;
+}
+
+.btn-field {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
 }
