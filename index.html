@@ -11,11 +11,12 @@
 </head>
 <body>
     <div class="container-box">
-        <h1>Sign Up</h1>
+        <h1 id="title">Sign Up</h1>
         <form>
             <div class="input-group">
+
                 <p>Please fill up the forward informations to sign up.</p>
-                <div class="input-field">
+                <div class="input-field" id="nameField">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Name">
                 </div>
@@ -27,19 +28,35 @@
                     <i class="fa-solid fa-lock"></i>
                     <input type="password" placeholder="Password">
                 </div>
-                <div class="input-field">
+                <div class="input-field" id="passwordRepeat">
                     <i class="fa-solid fa-lock"></i>
                     <input type="text" placeholder="Repeat Password">
                 </div>  
                 <p>Lost password? <a href="">Click Here!</a></p>
-                <p>Already have an account? <a href="">Log in!</a></p>
-
             </div>
+
             <div class="btn-field">
-                <button type="button">Submit</button>
+                <button type="button" id="signUpBtn">Sign Up</button>
+                <button type="button" id="signInBtn">Sign In</button>
+
             </div>
         </form>
     </div>
     
+    <script>
+        let signUpBtn = document.getElementById("signUpBtn");
+        let signInBtn = document.getElementById("signInBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title")
+
+        signInBtn.onclick = function(){
+            nameField.style.maxHeight = 0;
+        }
+
+        signUpBtn.onclick = function(){
+            nameField.style.maxHeight = 1;
+        }
+        
+    </script>
 </body>
 </html>
