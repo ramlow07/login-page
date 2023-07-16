@@ -51,11 +51,22 @@
 
         signInBtn.onclick = function(){
             nameField.style.maxHeight = 0;
+            passwordRepeat.style.maxHeight = 0;
+            title.innerHTML = "Sign In";
+            signInBtn.classList.add(disable)
+            signUpBtn.classList.remove(disable)
         }
 
         signUpBtn.onclick = function(){
-            nameField.style.maxHeight = 1;
+            nameField.style.maxHeight = "60px";
+            passwordRepeat.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signInBtn.classList.add(disable)
+            signUpBtn.classList.remove(disable)
+            p.classList.remove(disable)
         }
+
+        
         
     </script>
 </body>
