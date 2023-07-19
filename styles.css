@@ -15,6 +15,7 @@ background-size: cover;
 position: relative;
 }
 
+
 .container-box {
     width: 50%;
     max-width: 450px;
@@ -22,7 +23,7 @@ position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white !important;
+    background-color: #fff !important;
     padding: 50px 60px 70px;
     text-align: center;
 }
@@ -89,18 +90,26 @@ form p a {
 
 .btn-field {
     width: 100%;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
 }
 
 .btn-field button {
     flex-basis: 48%;
     background: #3c00a0;
     color: #fff;
-    height: px;
+    height: 40px;
     border: 0;
-    border-radius: 40px;
+    border-radius: 20px;
     outline: 0;
     cursor: pointer;
     transition: background 1s;
+}
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+.input-group{
+    height: 340px;
 }

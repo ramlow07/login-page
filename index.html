@@ -11,17 +11,17 @@
 </head>
 <body>
     <div class="container-box">
-        <h1 id="title">Sign Up</h1>
-        <form>
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
             <div class="input-group">
-
                 <p>Please fill up the forward informations.</p>
                 <div class="input-field" id="nameField">
                     <i class="fa-solid fa-user"></i>
                     <input type="text" placeholder="Name">
                 </div>
                 <div class="input-field">
-                    <i class="fa-solid fa-envelope"></i>
+                     <i class="fa-solid fa-envelope"></i>
                      <input type="email" placeholder="E-Mail">
                 </div>
                 <div class="input-field">
@@ -37,7 +37,7 @@
 
             <div class="btn-field">
                 <button type="button" id="signUpBtn">Sign Up</button>
-                <button type="button" id="signInBtn">Sign In</button>
+                <button type="button" id="signInBtn" class="disable">Sign In</button>
 
             </div>
         </form>
@@ -52,7 +52,7 @@
         signInBtn.onclick = function(){
             nameField.style.maxHeight = 0;
             passwordRepeat.style.maxHeight = 0;
-            title.innerHTML = "Sign In";
+                title.innerHTML = "Sign In";
             signInBtn.classList.add(disable)
             signUpBtn.classList.remove(disable)
         }
